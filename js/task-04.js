@@ -3,14 +3,14 @@ let counterValue = 0;
 const counterEl = document.querySelector('#counter');
 const valueEl = document.querySelector('#value')
 
-function decrementCounterValue() {
+function onDecrementCounterValue() {
     counterValue -= 1;
     valueEl.textContent = counterValue;
 }
 
-function incrementCounterValue() {
+function onIncrementCounterValue() {
     counterValue += 1;
     valueEl.textContent = counterValue;
 }
-counterEl.firstElementChild.addEventListener('click', decrementCounterValue);
-counterEl.lastElementChild.addEventListener('click', incrementCounterValue)
+counterEl.firstElementChild.addEventListener('click', onDecrementCounterValue);
+counterEl.lastElementChild.addEventListener('click', onIncrementCounterValue)
