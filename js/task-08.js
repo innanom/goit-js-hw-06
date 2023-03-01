@@ -16,12 +16,12 @@ function onFormElSubmit(event) {
       return alert("Всі поля повинні бути заповнені");
   }
 
-  const data = { 
+  const formData = { 
    [ email.name ]: email.value, 
    [ password.name ]: password.value 
 };
 
-    console.log(data);
+    console.log(formData);
 
     event.target.reset();
 }
