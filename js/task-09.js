@@ -8,7 +8,7 @@ function getRandomHexColor() {
 const buttonEl = document.querySelector('.change-color');
 const colorEl = document.querySelector('.color');
 
-buttonEl.addEventListener('click', onColorChange)
+buttonEl.addEventListener('click', onColorChange);
 
 function onColorChange() {
  const  hexColor = getRandomHexColor();
